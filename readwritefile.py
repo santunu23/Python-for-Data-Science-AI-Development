@@ -103,5 +103,17 @@ df=pd.DataFrame(data)
 # print(unique_dates)
 
 #Conditional Filtering
+import pandas as pd
+# Creating a DataFrame from a dictionary
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 35, 28],
+        'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago']}
+
+df=pd.DataFrame(data)
 high_above_102=df[df['Age']>25]
 print(high_above_102)
+
+
+Slicing
+df.loc[1, 'Total'] 
+df.iloc[0:2, 0:3]
